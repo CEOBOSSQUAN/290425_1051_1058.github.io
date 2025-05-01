@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+<head>
+  <title>JTMK Department</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+/* Custom Styles */
+.logo-text {
+  float: left;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 1.1em;
+}
+.logo-text img {
+  height: 30px;
+  margin-right: 10px;
+}
+.ui-header .ui-title {
+  margin-left: 50px;
+}
+.main-heading {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+.sub-heading {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin: 0 20px 30px 20px;
+  text-align: center;
+}
+.projects-btn {
+  background: #3498db !important;
+  color: white !important;
+  margin: 20px auto;
+  width: 150px;
+  display: block;
+  font-size: 0.9em;
+  padding: 8px 0;
+}
+.member-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.member-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  float: left;
+}
+.member-info {
+  overflow: hidden;
+}
+.project-card {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.project-img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.social-sidebar {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+.social-sidebar a {
+  display: block;
+  margin-bottom: 10px;
+}
+.ui-content {
+  padding-left: 60px;
+}
+@media (max-width: 600px) {
+  .ui-content {
+    padding-left: 50px;
+  }
+}
+  </style>
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a">
+
+<!-- Floating Social Media Sidebar -->
+<div class="social-sidebar">
+  <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30" alt="LinkedIn"></a>
+  <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30" alt="GitHub"></a>
+  <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="30" alt="Twitter"></a>
+  <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="30" alt="YouTube"></a>
+  <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30" alt="Instagram"></a>
+</div>
+
+<!-- HOME Page -->
+<div data-role="page" id="home" data-title="JTMK Home">
+  <div data-role="header" data-position="fixed">
+    <div class="logo-text">
+      <img src="jtmk.jpg" alt="Logo">
+      JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI
+    </div>
+    <div data-role="navbar">
+      <ul class="ui-grid-d">
+        <li><a href="#home" class="ui-btn-active" data-icon="home">HOME</a></li>
+        <li><a href="#about" data-icon="user">ABOUT</a></li>
+        <li><a href="#projects" data-icon="grid">PROJECTS</a></li>
+        <li><a href="#contact" data-icon="phone">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="ui-content">
+    <h1 class="main-heading">HEY, MY NAME IS JTMK</h1>
+    <p class="sub-heading">
+      JTMK is the Department of Information and Communication Technology (JTMK) 
+      offering DDT courses (Diploma in Information Technology (Digital Technology)) at 
+      Seberang Perai Polytechnic (PSP).
+    </p>
+    <a href="#projects" data-role="button" class="projects-btn">PROJECTS</a>
+  </div>
+	
+  <div data-role="footer" data-position="fixed">
+    <p>Copyright © DDT4x S2 2024/2025. All rights reserved.</p>
+  </div>
+</div>
+
+<!-- ABOUT Page -->
+<div data-role="page" id="about" data-title="About JTMK">
+  <div data-role="header" data-position="fixed">
+    <div class="logo-text">
+      <img src="jtmk.jpg" alt="Logo">
+      JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI
+    </div>
+    <div data-role="navbar">
+      <ul class="ui-grid-d">
+        <li><a href="#home" data-icon="home">HOME</a></li>
+        <li><a href="#about" class="ui-btn-active" data-icon="user">ABOUT</a></li>
+        <li><a href="#projects" data-icon="grid">PROJECTS</a></li>
+        <li><a href="#contact" data-icon="phone">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="ui-content">
+    <h2>Our Team Members</h2>
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>Head of Department</h3>
+        <div class="member-card">
+          <img src="hod.jpg" alt="Head" class="member-img">
+          <div class="member-info">
+            <h4>Mohamad Azim Naim</h4>
+            <p>Head of Department</p>
+            <p>Tel: +6012-3456789</p>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Program Head (Software Track)</h3>
+        <div class="member-card">
+          <img src="sukthirar.jpg" alt="Software Head" class="member-img">
+          <div class="member-info">
+            <h4>Sukthirar A/L Bun Tham</h4>
+            <p>Program Head (Software Track)</p>
+            <p>Tel: 011 5894 4699</p>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Program Head (Network Track)</h3>
+        <div class="member-card">
+          <img src="network-head.jpg" alt="Network Head" class="member-img">
+          <div class="member-info">
+            <h4>Nur Aisya Sufia Binti Muhd Firdaus</h4>
+            <p>Program Head (Network Track)</p>
+            <p>Tel: 018 344 1051</p>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Program Head (Data Track)</h3>
+        <div class="member-card">
+          <img src="data-head.jpg" alt="Data Head" class="member-img">
+          <div class="member-info">
+            <h4>Ahmad Faizal Bin Hamzah</h4>
+            <p>Program Head (Data Track)</p>
+            <p>Tel: +6017-2233445</p>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <p>Copyright © DDT4x S2 2024/2025. All rights reserved.</p>
+  </div>
+</div>
+
+<!-- PROJECTS Page -->
+<div data-role="page" id="projects" data-title="Projects JTMK">
+  <div data-role="header" data-position="fixed">
+    <div class="logo-text">
+      <img src="jtmk.jpg" alt="Logo">
+      JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI
+    </div>
+    <div data-role="navbar">
+      <ul class="ui-grid-d">
+        <li><a href="#home" data-icon="home">HOME</a></li>
+        <li><a href="#about" data-icon="user">ABOUT</a></li>
+        <li><a href="#projects" class="ui-btn-active" data-icon="grid">PROJECTS</a></li>
+        <li><a href="#contact" data-icon="phone">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="ui-content">
+    <h2>Our Projects</h2>
+
+    <div class="project-card">
+      <h3>Topic: "The Role of Robotics in Modern Industry"</h3>
+      <img src="project1.jpg" alt="Lost and Found" class="project-img">
+      <a href="Topic1.pdf" data-role="button" target="_blank">View Report (PDF)</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Topic 2: “Artificial Intelligence (AI) in Daily Life”</h3>
+      <img src="project2.jpg" alt="E-Book" class="project-img">
+      <a href="Topic2.pdf" data-role="button" target="_blank">View Report (PDF)</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Topic 3: “The Future of Autonomous Vehicles”</h3>
+      <img src="project3.jpg" alt="Pet Shop" class="project-img">
+      <a href="Topic3.pdf" data-role="button" target="_blank">View Report (PDF)</a>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <p>Copyright © DDT4x S2 2024/2025. All rights reserved.</p>
+  </div>
+</div>
+
+<!-- CONTACT Page -->
+<div data-role="page" id="contact" data-title="Contact JTMK">
+  <div data-role="header" data-position="fixed">
+    <div class="logo-text">
+      <img src="jtmk.jpg" alt="Logo">
+      JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI
+    </div>
+    <div data-role="navbar">
+      <ul class="ui-grid-d">
+        <li><a href="#home" data-icon="home">HOME</a></li>
+        <li><a href="#about" data-icon="user">ABOUT</a></li>
+        <li><a href="#projects" data-icon="grid">PROJECTS</a></li>
+        <li><a href="#contact" class="ui-btn-active" data-icon="phone">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="ui-content">
+    <h2>Contact Us</h2>
+    <ul data-role="listview">
+      <li><a href="tel:+60183441051">Call Us: +6018-344 1051</a></li>
+      <li><a href="mailto:jtmk@psp.edu.my">Email: jtmk@psp.edu.my</a></li>
+      <li><a href="https://wa.me/60183441051" target="_blank">WhatsApp: +6018-344 1051</a></li>
+      <li><a href="https://maps.google.com?q=Politeknik+Seberang+Perai" target="_blank">Visit Us: Politeknik Seberang Perai</a></li>
+    </ul>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <p>Copyright © DDT4x S2 2024/2025. All rights reserved.</p>
+  </div>
+</div>
+
+</body>
+</html>
